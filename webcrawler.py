@@ -34,7 +34,7 @@ for company_name in company_names:
 
     browser.get(f"https://www.google.com/search?q={search_query}")
 
-    time.sleep(2)
+    time.sleep(1)
 
     try:
          first_result = browser.find_element("css selector", "div.tF2Cxc")
@@ -52,7 +52,7 @@ for company_name in company_names:
             pdf_file.write(pdf_content)
     print(f"PDF saved: {pdf_filepath}")
 
-    time.sleep(2)
+    time.sleep(1)
 
     # response = pip._vendor.requests.get(pdf_link)
     # pdf_content = response.content
@@ -60,7 +60,6 @@ for company_name in company_names:
     # with open(folder_name, "wb") as pdf_file:
     #  pdf_file.write(pdf_content)
     #  print(f"PDF saved: {pdf_file}")
- 
 browser.quit()
 
 
