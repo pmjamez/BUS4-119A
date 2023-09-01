@@ -32,7 +32,7 @@ for filename in os.listdir(folder_path):
         pdf_document.close()
         
         if water_lines:
-            print(f"Lines with " + keyword +" keyword in '{filename}':")
+            print(f"*********Lines with " + keyword +" keyword in '{filename}':* *******")
             for line in water_lines:
                 print(line)
         else:
